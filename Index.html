@@ -5,21 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>habitosparaser</title>
-    <link rel="stylesheet" href="..//Estilos CSS/style.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./Estilos CSS/style.css">
 </head>
 <body class="contenedor">
     <!--Fila del logo + nav-->
     <header class="header">
         <div class="container">
-            <a href="Index.html" class="logo">
-            <img src="..//Banco de Imagenes/Habitos-para-se-LOGO-Tipografia-clara_02 (1).png"  alt="logo de la compañia" class="logo-imag">
+            <a href="Index.html" class="logo" data-aos="fade-right">
+            <img src="./Banco de Imagenes/Habitos-para-se-LOGO-Tipografia-clara_02 (1).png"  alt="logo de la compañia" class="logo-imag">
             </a>
             <ul>
                 <li><a href="Index.html">Home</a></li>                  
-                <li><a href="..//Paguinas/Nosotros.html">Nosotros</a></li>
-                <li><a href="..//Paguinas/Blog.html">Blog</a></li>
-                <li><a href="..//Paguinas/Cursos.html">Cursos</a></li>
-                <li><a href="..//Paguinas/Contacto.html"></a></li>
+                <li><a href="./Paguinas/Nosotros.html">Nosotros</a></li>
+                <li><a href="./Paguinas/Blog.html">Blog</a></li>
+                <li><a href="./Paguinas/Cursos.html">Cursos</a></li>
+                <li><a href="./Paguinas/Contacto.html"></a></li>
             </ul>
         </div>
     </header>
@@ -32,13 +35,14 @@
                         <h4>Si quieres empezar a realizar los cambios necesarios <br> para ser una persona mas productiva, abundante y exitosa <br> ¡Estas en el camino!</h4>
                         <div id="containerButton">
                             <form action="..//Paguinas/Contacto.html">
-                                <button>Recibe todos los recursos aqui</button>
+                                <button data-aos="zoom-out">Recibe todos los recursos aqui</button>
                             </form>
                         </div>
                     </div>
                 </section>
                 <section id="Nosotros">
-                    <h2>Sobre Nosotros</h2>
+                    <h2 data-aos="fade-up"
+                    data-aos-duration="3000">Sobre Nosotros</h2>
                     <div class="container">
                         <div class="texto">
                             
@@ -52,7 +56,8 @@
                 </section>
                 <section id="blog">
                     <div class="container">
-                        <h2>Blog</h2>
+                        <h2 data-aos="fade-up"
+                        data-aos-duration="3000">Blog</h2>
                             <div class="contenido">
                                 <div class="carta">
                                     <h3>¿Cómo Organizarme Mejor y Aprovechar Mi Tiempo?</h3>
@@ -74,7 +79,8 @@
                 </section>
                 <section id="cursos">
                     <div class="container">
-                        <h2>Cursos</h2>
+                        <h2 data-aos="fade-up"
+                        data-aos-duration="3000">Cursos</h2>
                         <div class="containerCurso">
                             <div class="curso">
                                 <h3>Bullet Journal</h3>
@@ -115,9 +121,9 @@
                             <h4>Redes sociales</h4>
                             <div class="miniLogos">
                                 <ul>
-                                    <li><a href=""><img class="facebook" src="../RRSS/icons8-facebook-30.png" alt=""></a></li>                        
-                                    <li><a href=""><img class="instagram" src="../RRSS/icons8-instagram-24.png" alt=""></a></li>  
-                                    <li><a href=""><img class="youtube" src="../RRSS/icons8-youtube-play-32.png" alt=""></a></li>
+                                    <li><a href=""><img class="facebook" src="./RRSS/icons8-facebook-30.png" alt=""></a></li>                        
+                                    <li><a href=""><img class="instagram" src="./RRSS/icons8-instagram-24.png" alt=""></a></li>  
+                                    <li><a href=""><img class="youtube" src="./RRSS/icons8-youtube-play-32.png" alt=""></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -129,5 +135,11 @@
         <div class="container">© All rights reserved Hábitos Para Ser
         </div>    
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>  
 </body>
 </html>
